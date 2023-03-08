@@ -62,7 +62,8 @@ export default function Playground() {
                             yesterday: "YText",
                             past: period => `P-${period} Text`,
                             currentMonth: "CMText",
-                            pastMonth: "PMText"
+                            pastMonth: "PMText",
+                            customRange: "CRText"
                         },
                         footer: {
                             cancel: "CText",

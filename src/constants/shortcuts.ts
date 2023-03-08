@@ -30,26 +30,26 @@ const DEFAULT_SHORTCUTS: {
             }
         },
         {
-            daysNumber: 30,
-            text: "Last 30 days",
+            daysNumber: 15,
+            text: "Last 15 days",
             period: {
-                start: formatDate(dayjs().subtract(30, "d")),
+                start: formatDate(dayjs().subtract(15, "d")),
                 end: formatDate(dayjs())
             }
         }
     ],
-    currentMonth: {
-        text: "This month",
-        period: {
-            start: formatDate(dayjs().startOf("month")),
-            end: formatDate(dayjs().endOf("month"))
-        }
-    },
     pastMonth: {
         text: "Last month",
         period: {
             start: formatDate(previousMonth(dayjs()).startOf("month")),
             end: formatDate(previousMonth(dayjs()).endOf("month"))
+        }
+    },
+    customRange: {
+        text: "Custom Range",
+        period: {
+            start: formatDate(dayjs()),
+            end: formatDate(dayjs())
         }
     }
 };

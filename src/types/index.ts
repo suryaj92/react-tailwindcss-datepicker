@@ -10,6 +10,7 @@ export interface Configs {
         past?: (period: number) => string;
         currentMonth?: string;
         pastMonth?: string;
+        customRange?: string;
     } | null;
     footer?: {
         cancel?: string;
